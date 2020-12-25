@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="wind">Wind</string>
+    <string name="precipitation">Precipitation</string>
+    <string name="humidity">Humidity</string>
+    <string name="london_uk">London, UK</string>
+    <string name="_51_oakbank_grove">51 Oakbank Grove</string>
+    <string name="rainny">Rainny</string>
+    <string name="mo">MO</string>
+    <string name="tu">TU</string>
+    <string name="we">WE</string>
+    <string name="sunny">Sunny</string>
+    <string name="th">TH</string>
+    <string name="fr">FR</string>
+    <string name="sa">SA</string>
+    <string name="su">SU</string>
+</resources>

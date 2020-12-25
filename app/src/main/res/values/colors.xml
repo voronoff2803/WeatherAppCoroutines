@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorText">#FFFFFF</color>-->
+<!--    <color name="colorPrimary">#191919</color>-->
+<!--    <color name="colorPrimaryDark">#000000</color>-->
+<!--    <color name="colorAccent">#DD4848</color>-->
+
+    <color name="colorText">#252525</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#DADADA</color>
+    <color name="colorTextDark">#C3C3C3</color>
+    <color name="colorAccent">#EF693E</color>
+    <color name="colorAccent2">#3EA8EF</color>
+    <color name="colorAccent3">#5ECC62</color>
+
+    <color name="colorTextDTheme">#E3E3E3</color>
+    <color name="colorPrimaryDTheme">#000000</color>
+    <color name="colorPrimaryDarkDTheme">#4E4E4E</color>
+    <color name="colorTextDarkDTheme">#8A8A8A</color>
+</resources>

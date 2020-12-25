@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="245dp"
+            android:layout_height="377dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_extrabold"
+                android:text="@string/london_uk"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.3"
+                android:fontFamily="@font/raleway_extrabold"
+                android:text="@string/_51_oakbank_grove"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="– 2℃"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/rainy"
+                app:tint="@color/colorAccent2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="435dp"
+            android:layout_height="388dp"
+            android:layout_margin="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="2dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/breeze"
+                        app:tint="@color/colorAccent3"
+                        tools:srcCompat="@drawable/breeze" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_bold"
+                        android:gravity="center"
+                        android:text="@string/wind"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.3"
+                        android:fontFamily="@font/raleway_bold"
+                        android:gravity="center"
+                        android:text="78"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="2dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/precipitation"
+                        app:tint="@color/colorAccent3"
+                        tools:srcCompat="@drawable/precipitation" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_bold"
+                        android:gravity="center"
+                        android:text="@string/precipitation"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.3"
+                        android:fontFamily="@font/raleway_bold"
+                        android:gravity="center"
+                        android:text="52"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="changeTheme"
+                        android:text="Change Theme"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="2dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/humidity"
+                        app:tint="@color/colorAccent3"
+                        tools:srcCompat="@drawable/humidity" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_bold"
+                        android:gravity="center"
+                        android:text="@string/humidity"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.3"
+                        android:fontFamily="@font/raleway_bold"
+                        android:gravity="center"
+                        android:text="89"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:isScrollContainer="false"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginBottom="2dp"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/sun"
+                                app:tint="@color/colorAccent"
+                                tools:srcCompat="@drawable/sun" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/sunny"
+                                android:textColorHint="#FFFFFF"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.3"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/fr"
+                                android:textColorHint="#FFFFFF"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginBottom="2dp"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/rainy"
+                                app:tint="@color/colorAccent2"
+                                tools:srcCompat="@drawable/rainy" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/rainny"
+                                android:textColorHint="#FFFFFF"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.3"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/tu"
+                                android:textColorHint="#FFFFFF"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginBottom="2dp"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/rainy"
+                                app:tint="@color/colorAccent2"
+                                tools:srcCompat="@drawable/rainy" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/rainny"
+                                android:textColorHint="#FFFFFF"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.3"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/we"
+                                android:textColorHint="#FFFFFF"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginBottom="2dp"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/sun"
+                                app:tint="@color/colorAccent"
+                                tools:srcCompat="@drawable/sun" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/sunny"
+                                android:textColorHint="#FFFFFF"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.3"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/th"
+                                android:textColorHint="#FFFFFF"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginBottom="2dp"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/rainy"
+                                app:tint="@color/colorAccent2"
+                                tools:srcCompat="@drawable/rainy" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/rainny"
+                                android:textColorHint="#FFFFFF"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.3"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/mo"
+                                android:textColorHint="#FFFFFF"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginBottom="2dp"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/sun"
+                                app:tint="@color/colorAccent"
+                                tools:srcCompat="@drawable/sun" />
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/sunny"
+                                android:textColorHint="#FFFFFF"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.3"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/fr"
+                                android:textColorHint="#FFFFFF"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
