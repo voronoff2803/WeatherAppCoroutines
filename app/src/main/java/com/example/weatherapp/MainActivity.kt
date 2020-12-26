@@ -58,13 +58,18 @@ class MainActivity : AppCompatActivity() {
     var viewModelJob = Job()
     val viewModelScope = CoroutineScope(Dispatchers.Main + viewModelJob)
 
+
+    override fun onDestroy() {
+        super.onDestroy()
+        viewModelJob.cancel()
+    }
+
     fun doWork() {
         viewModelScope.launch {
             withContext(Dispatchers.IO) {
                 getWeekDataCoroutines()
             }
         }
-
     }
 
     fun changeTheme(view: View) {
